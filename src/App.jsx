@@ -7,6 +7,8 @@ import Product from './components/Product';
 import Contact from './components/Contact';
 import ContactForm from './components/ContactForm';
 import Link2 from './components/Link2';
+import NotFound from './components/NotFound';
+
 
 
 import ProductDetail from './components/ProductDetail'
@@ -26,6 +28,7 @@ function App() {
             <Route path="contactform" element={<ContactForm />} />
             <Route path="link2" element={<Link2 />} />
           </Route>
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </div>
