@@ -12,18 +12,14 @@ const ProductDetail = () => {
     if (!product) return <p className="text-3xl text-center">Product not found</p>;
 
     return (
-        <div className="p-4 text-center justify-center mt-30">
-            <h1 className="text-2xl font-bold">{product.name}</h1>
+        <div className="p-4 text-center justify-center mt-30 bg-white rounded-lg shadow-xl max-w-[320px] mx-auto  ">
+            <img src={product.img} alt={product.name} className="mx-auto" />
+
+            <h1 className="text-2xl font-bold mt-2">{product.name}</h1>
             <p className="mt-2">{product.price}</p>
-            <li> phone is an essential electronic device used for communication.</li>
+            <p className="mt-2 mb-2">{product.description}</p>
 
-            <li> Modern smartphones allow us to make calls, send messages, and use the internet.</li>
-
-            <li> Phones are also used for taking pictures, watching videos, and using social media.</li>
-
-             <li> They have become a part of our daily life and make many tasks easier.</li>
-
-              <li>  However, too much use of phones can harm our eyes, sleep, and concentration.</li >
+           
 
         </div>
     );

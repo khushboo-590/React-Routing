@@ -15,7 +15,6 @@ const Product = () => {
                         <img src={product.img} alt={product.name} className="mx-auto" />
 
                         <h3 className="text-xl font-semibold mb-2 text-center mt-4">{product.name}</h3>
-                        <p className="text-gray-700 mb-3 text-center">{product.price}</p>
                         <Link to={`/product/${product.id}`}
                             className="text-white bg-blue-600 px-2 py-2 rounded hover:bg-blue-700  mx-auto justify-center items-center text-center flex max-w-[140px]"
                         >

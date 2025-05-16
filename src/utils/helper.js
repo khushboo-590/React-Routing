@@ -36,5 +36,4 @@ export const navLinks = [
     { name: 'Product', path: '/product' },
     { name: 'Contact', path: '/contact' },
 ];
-// Aisa routing system jo apne aap network ya website ke routes ko badalta rahe, jab bhi network ya data ke conditions change ho.
 
