@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactForm = () => {
   return (
-    <form className="max-w-[600px] mx-auto p-6 bg-pink-100 space-y-4">
+    <form className="max-w-[600px] mx-auto p-6 bg-white space-y-4">
       <div className="flex flex-col md:flex-row gap-4 mt-20">
         <input
           type="text" placeholder="First name" className="flex-1 border border-gray-300 rounded px-4 py-2 "
