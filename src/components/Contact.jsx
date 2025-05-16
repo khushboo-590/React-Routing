@@ -4,7 +4,7 @@ import { Link, Outlet } from 'react-router-dom';
 const Contact = () => {
     return (
         <div className='max-w-[1320px] mx-auto px-6 py-3'>
-            <h2 className='text-green-700 text-2xl mt-8 text-center'>Nested link example (without NavLink)</h2>
+            <h2 className='text-green-700 text-2xl mt-8 text-center'>Nested link example </h2>
             <nav className='flex gap-10 justify-center mt-4 mb-4 text-lg'>
                 <Link
                     to="contactform"
