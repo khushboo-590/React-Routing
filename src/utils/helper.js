@@ -1,6 +1,6 @@
 import IPhone from '../assets/images/iohone.jpeg'
 import Sumsung from '../assets/images/samsung.jpeg'
-import OnePlus from '../assets/images/iplus.jpeg'
+import OnePlus from '../assets/images/images.jpeg'
 
 
 export const products = [
