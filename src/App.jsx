@@ -7,6 +7,7 @@ import Product from './components/Product';
 import Contact from './components/Contact';
 import ContactForm from './components/ContactForm'; 
 import Link2 from './components/Link2'; 
+
 import ProductDetail from './components/ProductDetail'
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/about" element={<About />} />
+          <Route path="/about/*" element={<About />}></Route>
         <Route path="/product" element={<Product />} />
         <Route path="/product/:id" element={<ProductDetail />} />
         <Route path="/contact" element={<Contact />}>

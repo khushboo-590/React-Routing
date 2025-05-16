@@ -5,7 +5,7 @@ import { products } from "../utils/helper";
 const Product = () => {
     return (
         <div className="max-w-[1320px] mx-auto  p-3">
-            <h2 className="text-2xl font-bold mb-6 p-2 text-center mt-7">All Products</h2>
+            <h2 className="text-2xl font-bold mb-6 p-2 text-center mt-7"> Products</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {products.map((product) => (

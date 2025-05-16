@@ -9,7 +9,7 @@ export const products = [
         img :IPhone,
         name:
             "iPhone 15",
-        price: "$999",
+        price: "$5999",
         description: "Apple's latest phone"
     },
     {
@@ -17,7 +17,7 @@ export const products = [
         img: Sumsung,
 
         name: "Samsung Galaxy S24",
-        price: "$899",
+        price: "$4899",
         description: "High-end Android phone"
     },
     {
@@ -25,7 +25,7 @@ export const products = [
         img: OnePlus,
 
         name: "OnePlus 12",
-        price: "$699",
+        price: "$3699",
         description: "Flagship killer phone"
     },
 ];

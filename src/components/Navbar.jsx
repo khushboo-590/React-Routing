@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink,Link } from 'react-router-dom';
 import { navLinks } from '../utils/helper';
 
 const Navbar = () => {
@@ -11,10 +11,10 @@ const Navbar = () => {
     };
    return (
         <nav className="px-6 py-5 flex items-center justify-between max-w-[1320px] mx-auto relative">
-            <div className="text-white text-3xl font-semibold">Page logo</div>
+            <Link to='logo' className="text-white text-3xl font-semibold">Page logo</Link>
             <div className="hidden md:flex space-x-6">
                 {navLinks.map((link) => (
-                    <NavLink key={link.path} to={link.path}
+                    <NavLink key  to={link.path}
                         className={({ isActive }) =>
                             `font-bold ${isActive ? 'text-red-500' : 'text-white'}`}    >
                         {link.name}
@@ -33,7 +33,7 @@ const Navbar = () => {
                 className={`fixed top-0 left-0 w-full h-screen bg-white z-20 flex flex-col items-center justify-center space-y-6 transform transition-transform duration-500 ${menuOpen ? 'translate-x-0' : '-translate-x-full'
                     } md:hidden`}>
                 {navLinks.map((link) => (
-                    <NavLink key={link.path} to={link.path} className={({ isActive }) =>
+                    <NavLink key  to={link.path} className={({ isActive }) =>
                             `font-bold text-xl ${isActive ? 'text-red-500' : 'text-black'}`}
                         onClick={() => setMenuOpen(false)}>{link.name}</NavLink>
                 ))}
