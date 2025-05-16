@@ -11,7 +11,8 @@ import ProductDetail from './components/ProductDetail'
 
 function App() {
   return (
-    <BrowserRouter>
+    <div className="bg-[url('./assets/images/bg-img.jpeg')] min-h-screen w-full bg-cover bg-center">
+<BrowserRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -19,13 +20,13 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/product" element={<Product />} />
         <Route path="/product/:id" element={<ProductDetail />} />
-
         <Route path="/contact" element={<Contact />}>
           <Route path="contactform" element={<ContactForm />} />
           <Route path="link2" element={<Link2 />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+      </BrowserRouter>
+    </div>
   );
 }
 
