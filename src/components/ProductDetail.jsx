@@ -7,7 +7,7 @@ import React from 'react';
 
 const ProductDetail = () => {
     const { id } = useParams();
-    const product = products.find(product => product.id === Number(id));
+    const product = products.find(item => item.id == id);
 
     if (!product) return <p className="text-3xl text-center">Product not found</p>;
 
