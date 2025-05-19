@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { products } from "../utils/helper";
+import CustomBtn from "./common/CustomBtn";
 
 const Product = () => {
     return (
@@ -15,11 +16,13 @@ const Product = () => {
                         <img src={product.img} alt={product.name} className="mx-auto" />
 
                         <h3 className="text-xl font-semibold mb-2 text-center mt-4">{product.name}</h3>
-                        <Link to={`/product/${product.id}`}
-                            className="text-white bg-blue-600 px-2 py-2 rounded hover:bg-blue-700  mx-auto justify-center items-center text-center flex max-w-[140px]"
-                        >
-                            View Details
+                        <Link to={`/product/${product.id}`}>
+                            <CustomBtn
+                                btn="View Details"
+                                className="text-white bg-blue-600 px-2 py-2 rounded hover:bg-blue-700 mx-auto justify-center items-center text-center flex max-w-[140px]"
+                            />
                         </Link>
+
                     </div>
                 ))}
             </div>
@@ -28,3 +31,6 @@ const Product = () => {
 };
 
 export default Product;
+
+
+
